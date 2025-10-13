@@ -13,6 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.saucedemo_utils import login, get_first_product_info, add_first_product_to_cart, go_to_cart, is_product_in_cart
 import os
+import time
 
 @pytest.fixture(scope="function")
 def driver(request):
@@ -49,6 +50,7 @@ def pytest_runtest_makereport(item, call):
 
 # Test 1: Login automatizado
 def test_login(driver):
+    time.sleep(2)  # Espera para observar el login
     """
     Test de login en saucedemo.com
     - Ingresa credenciales válidas
@@ -61,6 +63,7 @@ def test_login(driver):
 
 # Test 2: Verificación de catálogo
 def test_catalogo(driver):
+    time.sleep(2)  # Espera para observar el catálogo
     """
     Test de navegación y verificación del catálogo
     - Valida el título de la página
@@ -78,6 +81,7 @@ def test_catalogo(driver):
 
 # Test 3: Interacción con productos y carrito
 def test_carrito(driver):
+    time.sleep(2)  # Espera para observar el proceso de agregar al carrito
     """
     Test de interacción con productos y carrito
     - Agrega el primer producto al carrito
