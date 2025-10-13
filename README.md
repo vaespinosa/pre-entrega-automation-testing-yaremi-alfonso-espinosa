@@ -64,8 +64,21 @@ Este proyecto fue co-trabajado con el apoyo de GitHub Copilot para la generació
 Automatizar y validar los flujos principales de login, navegación de catálogo y carrito en saucedemo.com para prácticas de testing.
 
 ## Repositorio
-Sube este proyecto a GitHub con el nombre:
-`pre-entrega-automation-testing-[nombre-apellido]`
+El repositorio público para este proyecto debe llamarse:
+`pre-entrega-automation-testing-yaremi-alfonso-espinosa`
 
-## Commits
-Realiza commits frecuentes y descriptivos mostrando el avance.
+Enlace para entrega:
+`https://github.com/vaespinosa/pre-entrega-automation-testing-yaremi-alfonso-espinosa`
+
+## Buenas prácticas de commits
+- Realiza commits frecuentes y descriptivos para reflejar cada avance o corrección.
+- Usa mensajes claros, por ejemplo:
+   - `Agrego test de login automatizado`
+   - `Corrijo validación de productos en catálogo`
+   - `Actualizo README con instrucciones de instalación`
+- Antes de cada entrega, verifica que todos los cambios estén subidos con:
+   ```powershell
+   git add .
+   git commit -m "Descripción clara del cambio realizado"
+   git push
+   ```
